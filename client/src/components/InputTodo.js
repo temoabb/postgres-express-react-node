@@ -12,6 +12,8 @@ const InputTodo = () => {
       const { data } = await axios.post('http://localhost:5000/todos', body);
       console.log('data', data);
 
+      window.location = '/';
+
     } catch (error) {
       console.error(error.message);
     }
